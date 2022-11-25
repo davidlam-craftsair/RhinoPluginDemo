@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RhinoPlugInExcercise1", "Rh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DL.RhinoExcercise1.Core", "DL.RhinoExcercise1.Core\DL.RhinoExcercise1.Core.csproj", "{DCADB1C9-8783-4F33-B6F8-D10F4D72D53D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DL.Framework", "..\DLFramework\DL.Framework.csproj", "{2FB7026B-5A47-4FCD-AA2E-F720162EE1F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Supporting Libs", "Supporting Libs", "{91797F79-8DD3-4218-AE01-6CB51935DB4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportUtilityLib", "..\ReportUtilityLib\ReportUtilityLib.csproj", "{C7432115-1B0C-4DF1-A118-59E6BAD49B0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,9 +27,22 @@ Global
 		{DCADB1C9-8783-4F33-B6F8-D10F4D72D53D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCADB1C9-8783-4F33-B6F8-D10F4D72D53D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DCADB1C9-8783-4F33-B6F8-D10F4D72D53D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FB7026B-5A47-4FCD-AA2E-F720162EE1F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FB7026B-5A47-4FCD-AA2E-F720162EE1F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FB7026B-5A47-4FCD-AA2E-F720162EE1F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FB7026B-5A47-4FCD-AA2E-F720162EE1F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7432115-1B0C-4DF1-A118-59E6BAD49B0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7432115-1B0C-4DF1-A118-59E6BAD49B0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7432115-1B0C-4DF1-A118-59E6BAD49B0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7432115-1B0C-4DF1-A118-59E6BAD49B0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DCADB1C9-8783-4F33-B6F8-D10F4D72D53D} = {91797F79-8DD3-4218-AE01-6CB51935DB4F}
+		{2FB7026B-5A47-4FCD-AA2E-F720162EE1F0} = {91797F79-8DD3-4218-AE01-6CB51935DB4F}
+		{C7432115-1B0C-4DF1-A118-59E6BAD49B0E} = {91797F79-8DD3-4218-AE01-6CB51935DB4F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56996B30-6386-4E56-903B-FA8EF445DB28}

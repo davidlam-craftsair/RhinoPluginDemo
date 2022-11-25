@@ -1,4 +1,8 @@
-﻿namespace RhinoPlugInExcercise1
+﻿using DL.Framework;
+using Rhino.PlugIns;
+using Rhino.Render.DataSources;
+
+namespace RhinoPlugInExcercise1
 {
     ///<summary>
     /// <para>Every RhinoCommon .rhp assembly must have one and only one PlugIn-derived
@@ -14,6 +18,7 @@
         public RhinoPlugInExcercise1PlugIn()
         {
             Instance = this;
+            CreateFramework();
         }
 
         ///<summary>Gets the only instance of the RhinoPlugInExcercise1PlugIn plug-in.</summary>
@@ -25,5 +30,21 @@
         // You can override methods here to change the plug-in behavior on
         // loading and shut down, add options pages to the Rhino _Option command
         // and maintain plug-in wide options in a document.
+        protected override LoadReturnCode OnLoad(ref string errorMessage)
+        {
+            return base.OnLoad(ref errorMessage);
+        }
+
+        private static void CreateFramework()
+        {
+            var frameworkConstruction = new FrameworkConstruction();
+            frameworkConstruction.ConfigureIoC(new IoCConfiguration());
+        }
+
+        protected override void OnShutdown()
+        {
+            
+            base.OnShutdown();
+        }
     }
 }
